@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    /* colors */
+    --primary-color: #3092FC;
+    --secondary-color: #70BF44;
+    --tertiary-color: #E8E6E6;
+    --footer-color: #4c4d4f;
+    --blue-buttons-color:#566fb8;
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.axis-txt {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.navbar-nav a{
+    text-decoration: none;
+    color:black;
+}
+
+.g-highlight{
+    background-color: var(--secondary-color);
+    color:white;
+}
+
+.b-highlight{
+    background-color: var(--primary-color);
+    color:white;
+}
+
+footer{
+    background-color: var(--footer-color);
+    font-weight: 100;
+}
+
+footer p {
+    color:white;
+}
+
+footer a{
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
+#form-message{
+    height: 6rem;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+}
+
+#message-help{
+    color:white;
+}
+
+#slogan{
+    width:35%;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#video-container h1{
+    font-weight: bold;
+    color: #41667C;
+}
+
+.fa-brands{
+    width: 50px;
+}
+
+@media screen and (max-width:576px){
+    #org-logo {
+        max-width: 3.5rem;
+    }
+
+    .heading-container {
+        background-image: url(../assets/images/sarasa.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+    }
+
+    .axis-img{
+        min-width:146px;
+        max-width: 150px;
+        min-height:146px;
+        max-height: 150px;
+    }
+
+}
+
+@media screen and (min-width:577px) {
+    .heading-container {
+        background-image: url(../assets/images/heading-bkg-sm.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+    }
+
+    #org-logo {
+        max-width: 4.5rem;
+    }
+
+    .nav-item {
+        padding-left: 2vw;
+    }
+
+    .nav-item:hover{
+        background-color:var(--tertiary-color);
+        color:#3092FC;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #slogan{
+        color:white;
+    }
+    .heading-container {
+        background-image: url(../assets/images/heading-bkg-md.jpeg); 
+        background-position: top;
+    }
+
+    .nav-md-btn {
+        border: 1px solid var(--blue-buttons-color);
+        font-variant: small-caps;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .nav-md-btn:hover{
+        background-color: var(--blue-buttons-color);
+        color:white;
+    }
+
+    .nav-md-btn {
+        border-top-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        font-size: 1.2rem;
+    }
+
+    .nav-md-btn-green{
+        background-color:var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+
+    #contact-form{
+        margin-top: -60px;
+    }
+
+}
+
+@media screen and (min-width:992px){
+    .heading-container {
+        background-image: url(../assets/images/DSC_0935_JPG.jpg); 
+        background-position: top;
+        height: 40vh;
+    }
+
+    main{
+        padding-top: 90px;
+    }
+
+    #navbar{
+        position:fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .heading-container {
+        background-image: url(../assets/images/44686d.jpg); 
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .heading-container {
+        background-image: url(../assets/images/manos.jpg); 
+        background-position: center;
+    }
+
+    #navbar{
+        height:20vh;
+    }
+
+    #org-logo {
+        max-width: 5rem;
+    }
+
+    main{
+        padding-top: 20vh;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #socials, #address, #slogan-img{
+        text-align: center;
+    }
+}
+

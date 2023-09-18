@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+    /* colors */
+    --primary-color: #3092FC;
+    --secondary-color: #70BF44;
+    --tertiary-color: #E8E6E6;
+    --footer-color: #4c4d4f;
+    --blue-buttons-color:#566fb8;
+}
+
+.enroll-img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    color: var(--secondary-color);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+p, h2,li{
+    color: var(--primary-color);
+}
+
+li{
+    margin-left:2.5em;
+}
+
+#enroll-btn{
+    background-color: var(--secondary-color);
+    border:none;
+}

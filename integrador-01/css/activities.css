@@ -1,0 +1,26 @@
+.activity-sample{
+    width: 100%;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.b-highlight{
+    display: block;
+    width: fit-content;
+}
+
+p{
+    font-weight: 100;
+    text-align: justify;
+}
+
+.carrousel-img{
+    max-width: 100%;
+    height: auto;
+}
+
+#deportiva{
+    background-color: #f7f7f7;
+}

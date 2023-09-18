@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) {
+
+    @keyframes appear {
+      0%   {opacity:0%;}
+      15%  {opacity:10%;}
+      75%  {opacity:50%;}
+      100% {opacity: 100%;}
+    }
+  
+  @keyframes drop{
+      from{bottom: 1000px}
+      to {bottom:0px};
+  }
+
+  @keyframes slide-in {
+    from{
+        left: 200%;
+        opacity:10%
+    }
+    to{
+        left:0%;
+        opacity: 100%;
+    }
+  }
+
+  #navbar{
+    padding:1px;
+  }
+
+  .values-container h2{
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 2s;
+  }
+
+  #slogan{
+      position: relative;
+      animation-name: appear;
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
+  }
+
+  #crecimiento{
+      position: relative;
+      animation-name: drop;
+      animation-duration: 1s;
+  }
+
+  #conocimiento{
+      position: relative;
+      animation-name: drop;
+      animation-duration: 1.3s;
+  }
+
+  #companerismo{
+      position: relative;
+      animation-name: drop;
+      animation-duration: 1.5s;
+  }
+
+  .sponsor-img{
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 2s;
+  }
+}

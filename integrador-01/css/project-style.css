@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+    /* colors */
+    --primary-color: #3092FC;
+    --secondary-color: #70BF44;
+    --tertiary-color: #E8E6E6;
+    --footer-color: #4c4d4f;
+    --blue-buttons-color:#566fb8;
+}
+
+.project-img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-weight: 700;
+    color: #414141;
+}
+
+p{
+    font-weight: 100;
+    text-align: justify;
+}
+
+.axis-txt{
+    font-size: 0.9rem;
+}
+
+#join-banner{
+    height: 55vh;
+    background-image: url(../assets/images/join.jpeg);
+    background-size: cover;
+}
+
+#join-banner h1{
+    color:white;
+    font-size:3.5rem;
+}
+
+#join-banner .b-highlight{
+    display: block;
+}
+
+#colaborar-btn{
+    background-color: var(--secondary-color);
+    max-width:150px;
+    text-align: center;
+    color:white;
+    font-weight: 100;
+    padding:5px 20px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+#colaborar-btn:hover{
+    transform: scale(1.1) perspective(1px);
+    box-shadow: 3px 5px 5px #4c4d4f;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .project-img{
+        max-width:50vw;
+        display:block;
+        margin:auto;
+    }
+}

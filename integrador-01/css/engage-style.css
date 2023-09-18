@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+    /* colors */
+    --primary-color: #3092FC;
+    --secondary-color: #70BF44;
+    --tertiary-color: #E8E6E6;
+    --footer-color: #4c4d4f;
+    --blue-buttons-color:#566fb8;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+p{
+    font-weight: 100;
+    text-align: justify;
+}
+
+#globos-img{
+    width: 100%;
+}
+
+#donate-btn{
+    background-color: var(--secondary-color);
+    border:none;
+    max-width:200px;
+    text-align: center;
+    color:white;
+    font-weight: 100;
+    padding:15px 20px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+#donate-btn:hover{
+    transform: scale(1.1) perspective(1px);
+    box-shadow: 3px 5px 5px #4c4d4f;
+}
+
+#volunteer-banner{
+    background-image: url(../assets/images/enseniar.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 50vw;
+    background-repeat: no-repeat;
+
+}
+
+#volunteer-banner p{
+    color:white;
+}
+
+.sponsor-img{
+    width:130px;
+}

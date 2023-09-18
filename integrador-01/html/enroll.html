@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Integrador - Proyecto GC</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/companerismo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/enroll-style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md poppins" id="navbar">
+            <div class="container-fluid px-lg-5">
+                <a href="../index.html" class="navbar-brand">
+                    <img id="org-logo" src="../assets/images/logoGC_slogan.png.webp">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigation-items">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navigation-items" class="collapse navbar-collapse">
+                    <div class="navbar-nav w-100 justify-content-md-around">
+                        <a href="about.html"
+                            class="nav-item my-1 px-md-3 py-md-1 nav-md-btn my-md-auto px-xl-5 py-xl-2">
+                            Quiénes Somos
+                        </a>
+                        <a href="project.html"
+                            class="nav-item my-1 px-md-3 py-md-1 nav-md-btn my-md-auto px-xl-5 py-xl-2">
+                            Proyecto
+                        </a>
+                        <a href="activities.html"
+                            class="nav-item my-1 px-md-3 py-md-1 nav-md-btn my-md-auto px-xl-5 py-xl-2">
+                            Actividades
+                        </a>
+                        <a href="engage.html"
+                            class="nav-item my-1 px-md-3 py-md-1 nav-md-btn my-md-auto px-xl-5 py-xl-2 nav-md-btn-green">
+                            Colaborar
+                        </a>
+                        <a href="enroll.html"
+                            class="nav-item my-1 px-md-3 py-md-1 nav-md-btn my-md-auto px-xl-5 py-xl-2 nav-md-btn-green">
+                            Inscripciones
+                        </a>
+                    </div>
+                    <div class="navbar-nav d-none d-md-flex justify-content-md-around align-items-md-center">
+                        <div class="nav-item ">
+                            <a href="https://www.facebook.com/proyectogc.ong" target="_blank">
+                                <img src="../assets/images/facebook.svg" alt="facebook icon">
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="https://www.instagram.com/proyecto.gc/" target="_blank">
+                                <img src="../assets/images/instagram.svg" alt="instagram icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="poppins" id="about">
+        <div class="row heading-container d-flex mb-5 align-items-center overflow-auto">
+        </div>
+        <div class="row px-5 mx-lg-5 mb-5">
+            <h1>Inscripciones 2024</h1>
+            <div class="row mt-3" id="requisitos">
+                <h2>Requisitos de inscripción</h2>
+                <p>
+                    <ul>
+                        <li>Tener entre 5 y hasta 11 años</li>
+                        <li>Tener acompañamiento de la familia durante el ciclo lectivo</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="row">
+                <h2>Formulario de inscripción</h2>
+                <div class="col-12 col-md-6 order-md-1">
+                    <!-- form placeholder -->
+                    <form id="enroll-form">
+                        <div class="form-floating mt-3">
+                            <input type="text" class="form-control" 
+                                id="enroll-form-name" 
+                                placeholder="Nombre y apellido del responsable"
+                                required>
+                            <label for="enroll-form-name">
+                                Nombre y apellido del responsable
+                            </label>
+                        </div>
+                        <div class="invalid-feedback" id="enroll-invalid-name">
+                            Por favor ingrese su nombre.
+                        </div>
+                        <div class="form-floating mt-3">
+                            <input type="text" 
+                            class="form-control" 
+                            id="enroll-form-student-name" 
+                            placeholder="Nombre y apellido del alumno"
+                            required>
+                            <label for="enroll-form-student-name">Nombre y apellido del alumno</label>
+                        </div>
+                        <div class="invalid-feedback" id="enroll-invalid-student-name">
+                            Por favor ingrese el nombre del alumno.
+                        </div>
+                        
+                        <div class="form-floating mt-3">
+                            <input type="email" 
+                            class="form-control" 
+                            id="enroll-form-email" 
+                            placeholder="alguien@ejemplo.com"
+                            required>
+                            <label for="enroll-form-email">Email</label>
+                        </div>
+                        <div class="invalid-feedback" id="enroll-invalid-email">
+                            Por favor ingrese su email.
+                        </div>
+                        
+                        <div class="form-floating mt-3">
+                            <input type="tel" 
+                            class="form-control" 
+                            id="enroll-form-phone" 
+                            placeholder="##-####-####"
+                            pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" 
+                            required>
+                            <label for="enroll-form-phone">Teléfono</label>
+                        </div>
+                        <div class="invalid-feedback" id="enroll-invalid-phone">
+                            Por favor ingrese su Teléfono<br>
+                            <small>11-1234-5678</small>
+                        </div>
+                        
+                        <div class="form-floating mt-3">
+                            <select class="form-select" 
+                            id="floatingSelect" 
+                            aria-label="Floating label select example">
+                            <option value="am">Mañana</option>
+                            <option value="pm">Tarde</option>
+                            </select>
+                            <label for="floatingSelect">Turno</label>
+                        </div>
+                    
+                        <div class="form-floating  mt-3">
+                            <textarea 
+                                class="form-control" 
+                                id="enroll-form-message" 
+                                placeholder="Escriba su mensaje aquí"
+                                maxlength="201" 
+                                required></textarea>
+                            <label for="enroll-form-message">Mensaje</label>
+                        </div>
+                        <div class="invalid-feedback" id="invalid-enroll-message">
+                            Por favor incluya un mensaje menor a 200 caracteres.
+                        </div>
+                        
+                        <button type="submit" 
+                            class="btn btn-primary mt-3"
+                            id="enroll-btn">Enviar</button>
+                    </form>
+                </div>
+                <div class="col order-md-0 d-flex align-items-center">
+                    <img class="enroll-img" src="../assets/images/orejas.jpg">
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="poppins">
+        <div class="row mx-5 my-2 px-lg-5">
+            <h2 class="mt-sm-4">
+                <span class="b-highlight ps-1 pe-3">
+                    Escribinos</span>
+            </h2>
+            <div class="col-sm-12 my-sm-2 col-md-6 col-lg-8 order-md-last">
+                <!-- formulario -->
+                <form id="contact-form">
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="form-name" placeholder="Nombre completo" required>
+                        <label for="form-name">Nombre</label>
+                    </div>
+                    <div class="invalid-feedback" id="invalid-name">
+                        Por favor ingrese su nombre.
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="email" class="form-control" id="form-email" placeholder="alguien@ejemplo.com"
+                            required>
+                        <label for="form-email">Email</label>
+                    </div>
+                    <div class="invalid-feedback" id="invalid-email">
+                        Por favor ingrese su email.
+                    </div>
+                    <div class="form-floating  mt-3">
+                        <textarea class="form-control" id="form-message" placeholder="Escriba su mensaje aquí"
+                            maxlength="201" required></textarea>
+                        <label for="form-message">Mensaje</label>
+                    </div>
+                    <div class="invalid-feedback" id="invalid-message">
+                        Por favor incluya un mensaje menor a 200 caracteres.
+                    </div>
+                    <div id="message-help" class="form-text">¿Cómo podemos ayudarte? <span
+                            id="char-counter">0</span>/<span id="max-chars">200</span>.</div>
+                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                </form>
+            </div>
+            <div class="col my-sm-3 col-md-6 col-lg-4 mt-3" id="address">
+                <div class="col-sm-12" id="socials">
+                    <div class="row w-50 mx-auto ms-md-0">
+                        <div class="col d-flex justify-content-sm-end justify-content-md-start px-md-0"
+                            id="facebook-link">
+                            <a href="https://www.facebook.com/proyectogc.ong" target="_blank">
+                                <img src="../assets/images/facebook.svg" alt="facebook icon">
+                            </a>
+                        </div>
+                        <div class="col d-flex justify-content-sm-start" id="instagram-link">
+                            <a href="https://www.instagram.com/proyecto.gc/" target="_blank">
+                                <img src="../assets/images/instagram.svg" alt="instagram icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12" id="slogan-img">
+                    <img src="https://static.wixstatic.com/media/c28ad8_83aac82f9cc445cc8112f6e3bc954ca5~mv2.png/v1/crop/x_443,y_130,w_458,h_134/fill/w_159,h_45,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/logoGC_slogan.png"
+                        alt="">
+                </div>
+                <div>
+                    <p>Manzoni 1360,
+                        González Catán <br>
+                        Buenos Aires Provincia <br>
+                        Tel. 11 7102 6887 <br>
+                        <a href="mailto:info@proyectogc.org">info@proyectogc.org</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/enroll-script.js"></script>
+    <script src="https://kit.fontawesome.com/dfcc5cbe77.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
